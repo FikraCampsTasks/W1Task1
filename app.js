@@ -9,29 +9,35 @@ fs.readFile("./flower.txt", (err, data) => {
   //converting date to sting and using split to convert string to array.
   const flowers = data.toString().split("\n");
 
-  // Assign number of row = length of array to the NumberOfRows constant.
   const NumberOfRows = flowers.length;
+  const sFlowers = [];
+  let remainingFlowers = 0;
+  const aFlowers = [];
+  const fiveLettersNameFlowers = [];
+  for (let i = 0; i < flowers.length; i++) {
+    const flower = flowers[i];
+    // if first letter is "S" then push to sFlower else increment remainingFlowers by 1
+    if (flower[0] == "S") sFlowers.push(flower);
+    else remainingFlowers++;
+    
+    // if first letter is "A" then push to aFlower
+    if (flower[0] == "A") aFlowers.push(flower);
+
+    // if flower name length is 5 then push to aFlower
+    if (flower.length == 5) fiveLettersNameFlowers.push(flower);
+  }
   console.log("Number of Rows: ", NumberOfRows);
-
-  // Create sFlower array by using filter method.
-  const sFlowers = flowers.filter(flower => flower[0] == "S");
   console.log("List the flower name that start with letter 'S':", sFlowers);
-
-  // Remaining Flower equal to diffrence between tatal flowers length and sFlowers length
-  const remainingFlower = flowers.length - sFlowers.length;
   console.log(
     "Count the number of flower that not start with letter 'S':",
-    remainingFlower
+    remainingFlowers
   );
-
-  // Create aFlower array by using filter method.
-  const aFlower = flowers.filter(flowers, flower => flower[0] == "A");
   console.log(
     "List the flower start with first letter of your name if your name start with 'S' use second letter:",
-    aFlower
+    aFlowers
   );
-
-  // Create fiveLettersNameFlowers array by using filter method.
-  const fiveLettersNameFlowers = flowers.filter(flower => flower.length == 5);
-  console.log("List all the flower the length of name is 5:", fiveLettersNameFlowers);
+  console.log(
+    "List all the flower the length of name is 5:",
+    fiveLettersNameFlowers
+  );
 });
