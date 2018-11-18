@@ -25,7 +25,7 @@ fs.readFile("./flower.txt", (err, data) => {
   );
 
   // Create aFlower array by using filter method.
-  const aFlower = flowers.filter(flowers, flower => flower[0] == "A");
+  const aFlower = flowers.filter(flower => flower[0] == "A");
   console.log(
     "List the flower start with first letter of your name if your name start with 'S' use second letter:",
     aFlower
