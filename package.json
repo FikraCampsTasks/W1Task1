@@ -1,0 +1,24 @@
+{
+  "name": "W2Task1",
+  "version": "1.0.0",
+  "description": "1. Count the number of rows. 2. List the flower name that start with letter 'S' 3. Count the number of flower that not start with letter 'S' 4. List the flower that start with first letter of your name if your name start with 'S' use second letter. 5. List all the flower when its name length equal 5.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FikraCampsTasks/W2Task1.git"
+  },
+  "keywords": [],
+  "author": "Salah Salih",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FikraCampsTasks/W2Task1/issues"
+  },
+  "homepage": "https://github.com/FikraCampsTasks/W2Task1#readme",
+  "dependencies": {
+    "underscore": "^1.9.1"
+  }
+}

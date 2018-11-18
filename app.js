@@ -1,0 +1,1 @@
+console.log("Welcome to Week 2 Task 1 Solution");
