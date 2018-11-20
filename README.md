@@ -1,4 +1,4 @@
-# Week 1 > Task 1
+# Week 2 > Task 1
 ## Use NodeJS read 'flower.txt' and
 1. Count the number of rows.
 2. List the flower name that start with letter 'S'
